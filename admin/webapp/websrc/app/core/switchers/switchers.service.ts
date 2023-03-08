@@ -8,8 +8,8 @@ export class SwitchersService {
 
   constructor() {
     this.app = {
-      name: 'NeuVector',
-      description: 'NeuVector Security Console',
+      name: '容器管控',
+      description: '安全控制台',
       year: new Date().getFullYear(),
     };
 

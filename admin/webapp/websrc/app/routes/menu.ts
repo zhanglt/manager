@@ -67,16 +67,18 @@ const POLICY = {
       translate: 'sidebar.nav.RESPONSE_POLICY',
       link: '/response-policy',
     },
-    {
-      text: 'DLP Sensors',
-      translate: 'sidebar.nav.DLP_SENSORS',
-      link: '/dlp-sensors',
-    },
-    {
-      text: 'WAF Sensors',
-      translate: 'sidebar.nav.WAF_SENSORS',
-      link: '/waf-sensors',
-    },
+    
+    //{
+    //  text: 'DLP Sensors',
+   //   translate: 'sidebar.nav.DLP_SENSORS',
+    //  link: '/dlp-sensors',
+  //  },
+   // {
+    //  text: 'WAF Sensors',
+   //   translate: 'sidebar.nav.WAF_SENSORS',
+   //   link: '/waf-sensors',
+  //  },
+    
   ],
 };
 const SECURITY_RISKS = {
