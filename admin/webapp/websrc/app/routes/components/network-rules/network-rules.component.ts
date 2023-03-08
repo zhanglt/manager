@@ -454,7 +454,7 @@ export class NetworkRulesComponent implements OnInit, OnChanges, OnDestroy {
           status: node.data.disable ? 'disabled' : 'enabled',
           updated_at: this.datePipe.transform(
             node.data.last_modified_timestamp * 1000,
-            'MMM dd, y HH:mm:ss'
+            'yyyy-MM-dd HH:mm:ss'
           ),
         });
       }

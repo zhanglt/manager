@@ -202,7 +202,7 @@ export class ContainersGridComponent implements OnInit {
         headerName: this.tr.instant('scan.gridHeader.TIME'),
         field: 'security.scan_summary.scanned_at',
         cellRenderer: params =>
-          this.datePipe.transform(params.value, 'MMM dd, y HH:mm:ss'),
+          this.datePipe.transform(params.value, 'yyyy-MM-dd HH:mm:ss'),
         comparator: (value1, value2, node1, node2) =>
           node1.data.security.scan_summary.scanned_timestamp -
           node2.data.security.scan_summary.scanned_timestamp,

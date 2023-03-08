@@ -50,8 +50,8 @@ export class RiskReportsPrintableReportComponent implements OnInit {
     const start = this.riskReports[this.riskReports.length - 1].reported_at;
     const end = this.riskReports[0].reported_at;
     return this.tr.instant('general.PDF_SUMMARY_RANGE_FILTERED', {
-      from: this.datePipe.transform(start, 'MMM dd, y HH:mm:ss'),
-      to: this.datePipe.transform(end, 'MMM dd, y HH:mm:ss'),
+      from: this.datePipe.transform(start, 'yyyy-MM-dd HH:mm:ss'),
+      to: this.datePipe.transform(end, 'yyyy-MM-dd HH:mm:ss'),
       rangedCount: `${count} ${this.tr.instant('audit.COUNT_POSTFIX')}`,
       filteredCount: filteredCount,
     });

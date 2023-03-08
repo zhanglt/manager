@@ -15,6 +15,7 @@ import {
   RowClassRules,
   ValueFormatterParams,
 } from 'ag-grid-community';
+import { DatePipe } from '@angular/common';
 import { QuickFilterService } from '@components/quick-filter/quick-filter.service';
 import { VulnerabilitiesGridSeverityCellComponent } from '@components/vulnerabilities-grid/vulnerabilities-grid-severity-cell/vulnerabilities-grid-severity-cell.component';
 import { TranslateService } from '@ngx-translate/core';
@@ -87,7 +88,8 @@ export class VulnerabilitiesGridComponent implements OnInit, OnChanges {
   constructor(
     private quickFilterService: QuickFilterService,
     private utils: UtilsService,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private datePipe: DatePipe
   ) {
     this.$win = $(GlobalVariable.window);
   }
@@ -162,9 +164,13 @@ export class VulnerabilitiesGridComponent implements OnInit, OnChanges {
   }
 
   dateFormatter(params: ValueFormatterParams): string {
-    const date = new Date(params.data.published_timestamp * 1000);
-    const dateString = date.toDateString().split(' ').slice(1);
-    dateString[1] = dateString[1] + ',';
-    return dateString.join(' ');
+    const date = new Date(params.data.published_timestamp * 1000 );
+    //const dateString = date.toDateString().split(' ').slice(1);
+  //  dateString[1] = dateString[1] + ',';
+   // return dateString.join(' ');
+    return date.toJSON().split('T').join('').substr(0,10)
   }
+
+
+
 }

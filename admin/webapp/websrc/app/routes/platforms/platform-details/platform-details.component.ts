@@ -118,7 +118,7 @@ export class PlatformDetailsComponent implements OnInit {
             this.platform.platform
           } at ${this.datePipe.transform(
             new Date(),
-            'MMM dd, y HH:mm:ss'
+            'yyyy-MM-dd HH:mm:ss'
           )} from Hosts page`,
           images: [],
           domains: [],

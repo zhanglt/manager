@@ -141,7 +141,7 @@ export class ModulesChartsComponent implements OnInit {
             hoverBackgroundColor: '#d32f2f',
             barThickness: 8,
             borderWidth: 1,
-            label: 'Fixable',
+            label: '可修复',
             stack: 'a',
           },
           {
@@ -151,7 +151,7 @@ export class ModulesChartsComponent implements OnInit {
             hoverBackgroundColor: '#ff7101',
             barThickness: 8,
             borderWidth: 1,
-            label: 'Unpatched',
+            label: '未修复',
             stack: 'a',
           },
           {
@@ -161,7 +161,7 @@ export class ModulesChartsComponent implements OnInit {
             hoverBackgroundColor: '#4caf50',
             barThickness: 8,
             borderWidth: 1,
-            label: 'Will Not Fix',
+            label: '不修复',
             stack: 'a',
           },
         ],

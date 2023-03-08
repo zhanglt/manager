@@ -76,7 +76,7 @@ export class NetworkRulesService {
         const date = new Date(params.value * 1000);
         return this.sanitizer.sanitize(
           SecurityContext.HTML,
-          this.datePipe.transform(date, 'MMM dd, y HH:mm:ss')
+          this.datePipe.transform(date, 'yyyy-MM-dd HH:mm:ss')
         );
       }
       return '';

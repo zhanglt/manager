@@ -99,7 +99,7 @@ export class SecurityRiskPanelComponent implements OnInit {
         }`,
         `(${this.datePipe.transform(
           summaryInfo.cvedb_create_time,
-          'MMM dd, y'
+          'yyyy-MM-dd'
         )})`,
       ],
       subScore: { height: `${95 - scoreInfo.score.vulnerabilityScoreBy100}%` },

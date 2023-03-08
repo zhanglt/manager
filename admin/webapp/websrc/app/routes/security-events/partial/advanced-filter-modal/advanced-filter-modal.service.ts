@@ -168,7 +168,7 @@ export class AdvancedFilterModalService {
     const _event = Object.assign({}, event);
     _event.reported_at = this.datePipe.transform(
       event.reported_at,
-      'MMM dd, y HH:mm:ss'
+      'yyyy-MM-dd HH:mm:ss'
     ) as string;
     return this.getValueString(_event).includes(keyword.toLowerCase());
   }
@@ -178,7 +178,7 @@ export class AdvancedFilterModalService {
     const _event = Object.assign({}, event);
     _event.reported_at = this.datePipe.transform(
       event.reported_at,
-      'MMM dd, y HH:mm:ss'
+      'yyyy-MM-dd HH:mm:ss'
     ) as string;
     return !this.getValueString(_event).includes(keyword.toLowerCase());
   }

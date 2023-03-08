@@ -164,7 +164,7 @@ export class EventsGridFilterService {
     const _event = Object.assign({}, event);
     _event.reported_at = this.datePipe.transform(
       event.reported_at,
-      'MMM dd, y HH:mm:ss'
+      'yyyy-MM-dd HH:mm:ss'
     ) as string;
     return this.getValueString(_event)
       .toLowerCase()
@@ -176,7 +176,7 @@ export class EventsGridFilterService {
     const _event = Object.assign({}, event);
     _event.reported_at = this.datePipe.transform(
       event.reported_at,
-      'MMM dd, y HH:mm:ss'
+      'yyyy-MM-dd HH:mm:ss'
     ) as string;
     return !this.getValueString(_event)
       .toLowerCase()

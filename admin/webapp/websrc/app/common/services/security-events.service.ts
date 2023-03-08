@@ -141,7 +141,7 @@ export class SecurityEventsService {
     displayedThreat.type.cssColor = 'fa icon-size-2 fa-bug text-danger';
     displayedThreat.reportedAt = this.datePipe.transform(
       threat.reported_at,
-      'MMM dd, y HH:mm:ss'
+      'yyyy-MM-dd HH:mm:ss'
     );
     displayedThreat.relativeDate = this.timeAgoPipe.transform(
       displayedThreat.reportedAt
@@ -240,7 +240,7 @@ export class SecurityEventsService {
     displayedViolation.type.cssColor = 'fa icon-size-2 fa-ban text-warning';
     displayedViolation.reportedAt = this.datePipe.transform(
       violation.reported_at,
-      'MMM dd, y HH:mm:ss'
+      'yyyy-MM-dd HH:mm:ss'
     );
     displayedViolation.relativeDate = this.timeAgoPipe.transform(
       displayedViolation.reportedAt
@@ -381,7 +381,7 @@ export class SecurityEventsService {
       'fa icon-size-2 fa-exclamation-triangle text-muted';
     displayedIncident.reportedAt = this.datePipe.transform(
       incident.reported_at,
-      'MMM dd, y HH:mm:ss'
+      'yyyy-MM-dd HH:mm:ss'
     );
     displayedIncident.relativeDate = this.timeAgoPipe.transform(
       displayedIncident.reportedAt

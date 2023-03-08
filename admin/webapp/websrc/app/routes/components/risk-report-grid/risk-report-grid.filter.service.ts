@@ -167,7 +167,7 @@ export class RiskReportGridFilterService {
     const _audit = Object.assign({}, audit);
     _audit.reported_at = this.datePipe.transform(
       audit.reported_at,
-      'MMM dd, y HH:mm:ss'
+      'yyyy-MM-dd HH:mm:ss'
     ) as string;
     return this.getValueString(_audit)
       .toLowerCase()
@@ -179,7 +179,7 @@ export class RiskReportGridFilterService {
     const _audit = Object.assign({}, audit);
     _audit.reported_at = this.datePipe.transform(
       audit.reported_at,
-      'MMM dd, y HH:mm:ss'
+      'yyyy-MM-dd HH:mm:ss'
     ) as string;
     return !this.getValueString(_audit)
       .toLowerCase()

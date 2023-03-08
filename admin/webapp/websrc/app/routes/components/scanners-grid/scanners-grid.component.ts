@@ -55,7 +55,7 @@ export class ScannersGridComponent implements OnInit, OnChanges {
       headerName: this.tr.instant('registry.CVE_DB_DATE'),
       field: 'cvedb_create_time',
       cellRenderer: params =>
-        this.datePipe.transform(params.value, 'MMM dd, y HH:mm:ss'),
+        this.datePipe.transform(params.value, 'yyyy-MM-dd HH:mm:ss'),
       comparator: (valueA, valueB, nodeA, nodeB) =>
         Date.parse(nodeA.data.cvedb_create_time) -
         Date.parse(nodeB.data.cvedb_create_time),

@@ -259,7 +259,7 @@ export class GroupsService {
               let date = new Date(Math.max(...lastTimes) * 1000);
               return isNaN(date.getTime())
                 ? null
-                : this.datePipe.transform(date, 'MMM dd, y HH:mm:ss');
+                : this.datePipe.transform(date, 'yyyy-MM-dd HH:mm:ss');
             } else return null;
           },
           comparator: (value1, value2, node1, node2) => {

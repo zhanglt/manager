@@ -146,7 +146,7 @@ export class NodesGridComponent implements OnInit {
         headerName: this.tr.instant('scan.gridHeader.TIME'),
         field: 'scan_summary.scanned_at',
         cellRenderer: params =>
-          this.datePipe.transform(params.value, 'MMM dd, y HH:mm:ss'),
+          this.datePipe.transform(params.value, 'yyyy-MM-dd HH:mm:ss'),
         comparator: (value1, value2, node1, node2) => {
           const n1_at = node1.data.scan_summary.scanned_at,
             n2_at = node2.data.scan_summary.scanned_at;

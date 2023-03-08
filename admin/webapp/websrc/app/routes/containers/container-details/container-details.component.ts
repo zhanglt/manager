@@ -247,7 +247,7 @@ export class ContainerDetailsComponent implements OnInit, OnDestroy {
             this.container.brief.display_name
           } at ${this.datePipe.transform(
             new Date(),
-            'MMM dd, y HH:mm:ss'
+            'yyyy-MM-dd HH:mm:ss'
           )} from Containers page`,
           images: [],
           domains: [this.container.brief.domain],

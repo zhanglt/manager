@@ -45,7 +45,7 @@ export class ComplianceService {
   ) {}
 
   transformDate(date) {
-    return this.datePipe.transform(date, 'MMM dd, y HH:mm:ss');
+    return this.datePipe.transform(date, 'yyyy-MM-dd HH:mm:ss');
   }
 
   // runWorkers() {

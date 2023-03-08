@@ -91,7 +91,7 @@ export class GraphService {
 
   transformDate(value) {
     const date = new Date(value * 1000);
-    return this.datePipe.transform(date, 'MMM dd, y HH:mm:ss');
+    return this.datePipe.transform(date, 'yyyy-MM-dd HH:mm:ss');
   }
 
   advFilterApplied = () => {

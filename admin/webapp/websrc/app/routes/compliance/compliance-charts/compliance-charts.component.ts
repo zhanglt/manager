@@ -130,7 +130,7 @@ export class ComplianceChartsComponent implements OnChanges {
         datasets: [
           {
             data: this.top5Compliance.map(c => c.container),
-            label: 'Container',
+            label: '容器',
             backgroundColor: this.barChartColors.container,
             hoverBackgroundColor: this.barChartColors.container,
             barThickness: 12,
@@ -139,7 +139,7 @@ export class ComplianceChartsComponent implements OnChanges {
           },
           {
             data: this.top5Compliance.map(c => c.node),
-            label: 'Node',
+            label: '主机',
             backgroundColor: this.barChartColors.node,
             hoverBackgroundColor: this.barChartColors.node,
             barThickness: 12,
@@ -148,7 +148,7 @@ export class ComplianceChartsComponent implements OnChanges {
           },
           {
             data: this.top5Compliance.map(c => c.image),
-            label: 'Image',
+            label: '镜像',
             backgroundColor: this.barChartColors.image,
             hoverBackgroundColor: this.barChartColors.image,
             barThickness: 12,
@@ -157,7 +157,7 @@ export class ComplianceChartsComponent implements OnChanges {
           },
           {
             data: this.top5Compliance.map(c => c.platform),
-            label: 'Platform',
+            label: '平台',
             backgroundColor: this.barChartColors.platform,
             hoverBackgroundColor: this.barChartColors.platform,
             barThickness: 12,

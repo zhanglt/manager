@@ -23,7 +23,7 @@ export class DateSliderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    let nowDateText = this.datePipe.transform(new Date(), 'MMM dd, yyyy');
+    let nowDateText = this.datePipe.transform(new Date(), 'yyyy-MM-dd');
     this.minValue = this.securityEventsService.cachedSecurityEvents[this.securityEventsService.cachedSecurityEvents.length - 1].reportedTimestamp * 1000;
     this.maxValue = new Date().getTime();
     this.options = {
@@ -32,7 +32,7 @@ export class DateSliderComponent implements OnInit {
       step: 1000 * 3600 * 24,
       enforceStep: false,
       translate: (value: number, label: LabelType): string => {
-        return Math.floor(value / 60000) === Math.floor(new Date().getTime() / 60000) ? this.translate.instant("general.NOW") : this.datePipe.transform(value, 'MMM dd, yyyy')!;
+        return Math.floor(value / 60000) === Math.floor(new Date().getTime() / 60000) ? this.translate.instant("general.NOW") : this.datePipe.transform(value, 'yyyy-MM-dd')!;
       }
     };
   }

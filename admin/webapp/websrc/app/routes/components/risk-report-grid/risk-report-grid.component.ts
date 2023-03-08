@@ -69,7 +69,7 @@ export class RiskReportGridComponent implements OnInit {
       headerName: this.tr.instant('threat.gridHeader.TIME'),
       field: 'reported_at',
       cellRenderer: params =>
-        this.datePipe.transform(params.value, 'MMM dd, y HH:mm:ss'),
+        this.datePipe.transform(params.value, 'yyyy-MM-dd HH:mm:ss'),
       comparator: (value1, value2, node1, node2) =>
         Date.parse(node1.data.reported_at) - Date.parse(node2.data.reported_at),
       icons: {

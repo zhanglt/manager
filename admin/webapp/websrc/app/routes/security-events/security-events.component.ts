@@ -887,7 +887,7 @@ export class SecurityEventsComponent implements OnInit {
             this.onQuickFilterChange(
               this.datePipe.transform(
                 this.selectedRow.reported_at,
-                'MMM dd, yyyy HH:mm:ss'
+                'yyyy-MM-dd HH:mm:ss'
               )!
             );
           } else {

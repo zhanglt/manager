@@ -111,11 +111,11 @@ export class VulnerabilitiesCsvService {
       }
       cve.last_modified_datetime = this.datePipe.transform(
         JSON.parse(JSON.stringify(cve.last_modified_timestamp)) * 1000,
-        'MMM dd, y HH:mm:ss'
+        'yyyy-MM-dd HH:mm:ss'
       );
       cve.published_datetime = this.datePipe.transform(
         JSON.parse(JSON.stringify(cve.published_timestamp)) * 1000,
-        'MMM dd, y HH:mm:ss'
+        'yyyy-MM-dd HH:mm:ss'
       );
       delete cve.package_versions;
       return cve;
@@ -176,14 +176,14 @@ export class VulnerabilitiesCsvService {
             i === 0
               ? this.datePipe.transform(
                   entryData.last_modified_timestamp * 1000,
-                  'MMM dd, y HH:mm:ss'
+                  'yyyy-MM-dd HH:mm:ss'
                 )
               : '',
           published_datetime:
             i === 0
               ? this.datePipe.transform(
                   entryData.published_timestamp * 1000,
-                  'MMM dd, y HH:mm:ss'
+                  'yyyy-MM-dd HH:mm:ss'
                 )
               : '',
         });
