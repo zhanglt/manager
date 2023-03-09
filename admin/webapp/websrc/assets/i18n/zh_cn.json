@@ -56,7 +56,7 @@
     "REPORTED_FROM": "从",
     "REPORTED_TO": "到",
     "DOWNLOAD_PDF": "以命名空间下载",
-    "NEED_RESCAN": "您需要重新扫描取得详细内容",
+    "NEED_RESCAN": "需要重新扫描取得详细内容",
     "VIEW_MORE": "全部浏览",
     "VIEW_LESS": "简略浏览",
     "SAMPLE": "范例"
@@ -112,7 +112,7 @@
     "RISK_REPORT": "风险报告",
     "VIOLATION": "违规",
     "THREAT": "威胁",
-    "AUDIT": "风险报告",
+    "AUDIT": "审计",
     "INCIDENT": "事故",
     "CHECK_APP": "检测应用",
     "BLOCK_ACCESS": "阻止未授权访问",
@@ -199,7 +199,7 @@
   },
   "logout": {
     "SIGN_OUT": "已经登出了",
-    "SIGN_OUT_DESC": "您可以关闭此浏览器窗口, 然后回到Rancher."
+    "SIGN_OUT_DESC": "可以关闭此浏览器窗口, 然后回到Rancher."
   },
   "login": {
     "SIGN_IN": "登录",
@@ -217,11 +217,12 @@
     "SESSION_TIMEOUT": "会话超时，请重新登录",
     "CHANGE_DEFAULT_PASSWORD": "请修改缺省密码!",
     "CHANGE_DEFAULT_PASSWORD_RANCHER": "默认Admin的密码应该被修改!",
-    "CHANGE_EXPIRING_PASSWORD": "您需要更新密码,因为密码将于{{expiring_Days}}天内过期!",
-    "CHANGE_EXPIRING_PASSWORD_NOW": "您需要立即更新密码, 因为密码今天即将过期!",
+    "CHANGE_EXPIRING_PASSWORD": "需要更新密码,因为密码将于{{expiring_Days}}天内过期!",
+    "CHANGE_EXPIRING_PASSWORD_NOW": "需要立即更新密码, 因为密码今天即将过期!",
     "UNSUPPORTED_ROLE": "该用户仅用于CI集成。",
     "VERSION_MISMATCHED": "管理界面, 控制器和代理之间有运行版本差异",
     "CVE_DB_OLD": "CVE数据库有{{day}}天没有更新"
+
   },
   "dashboard": {
     "WELCOME": "欢迎使用 {{appName}}",
@@ -305,7 +306,7 @@
       "INGRESS_EGRESS": "出入口暴露风险",
       "VUL_EXPLOIT": "漏洞风险",
       "SECURITY_RISK_SCORE": "安全风险评分",
-      "IMPROVE_SCORE": "改善您的评分",
+      "IMPROVE_SCORE": "改善评分",
       "message": {
         "SUMMARY_ERR": "获取概览摘要数据时发生错误",
         "NON_SCAN_WARNING1": "请开始设定",
@@ -315,17 +316,17 @@
       },
       "guideline": {
         "titles": {
-          "MAIN_SCORE_GOOD": "您的安全评分",
-          "MAIN_SCORE_NOT_GOOD": "怎样改进您的评分",
+          "MAIN_SCORE_GOOD": "安全评分",
+          "MAIN_SCORE_NOT_GOOD": "怎样改进评分",
           "SERVICE_EXPOSURE": "怎样降低服务风险",
           "INGRESS_EGRESS": "怎样降低暴露风险",
           "VUL_EXPLOIT": "怎样降低漏洞风险",
           "AUTO_SCAN_OFF": "怎样降低漏洞风险"
         },
-        "MAIN_SCORE_GOOD1": "您的安全评分",
+        "MAIN_SCORE_GOOD1": "安全评分",
         "MAIN_SCORE_GOOD2": "良好",
         "MAIN_SCORE_GOOD3": "! 当威胁，违规，漏洞，可疑进程或文件系统更动发生时安全评分会增加。",
-        "MAIN_SCORE_NOT_GOOD1": "您的安全总评分",
+        "MAIN_SCORE_NOT_GOOD1": "安全总评分",
         "MAIN_SCORE_FAIR": "一般",
         "MAIN_SCORE_POOR": "需要改进",
         "MAIN_SCORE_NOT_GOOD2": "，请检查安全评分，根据所推荐的解决方法来降低安全风险。",
@@ -399,8 +400,8 @@
         "EXPO_CONV_RPT": "暴露对话报告"
       },
       "comments": {
-        "SAFE": "您的服务已经被全部保护! ",
-        "CAUTION_SERVICE": "您仍有一些服务/POD在发现模式，他们没有在网络分割保护之下。",
+        "SAFE": "服务已经被全部保护! ",
+        "CAUTION_SERVICE": "仍有一些服务/POD在发现模式，他们没有在网络分割保护之下。",
         "CAUTION_POD": "请尽快核查网络规则，切换服务到保护/监视模式。"
       },
       "example": {
@@ -519,34 +520,34 @@
       "DETAILS": "详细内容",
       "ALL_PROTECT_MODE_DECLARE": "全部服务组已经都是在“保护”模式下。",
       "summary": {
-        "INSTRUCTION": "安全风险由以下因素评定，可通过此向导的指引来改进您的系统安全，得到良好的安全风险分数。",
+        "INSTRUCTION": "安全风险由以下因素评定，可通过此向导的指引来改进系统安全，得到良好的安全风险分数。",
         "IMPROVE_IT": "改进",
         "VIEW_LIST": "显示列表",
         "LEARN_HOW": "改进",
         "COMPLETED": "已完成",
         "serviceMode": {
           "brief_1": "审查“新服务”和运行服务的策略模式",
-          "advice_1": "如果您的新服务模式设置为“发现”，您的风险评分将会增加，因为部署的新服务将不会被自动保护。",
-          "advice_2": "如果您有任何服务处在“发现”模式，风险评分将会有所增加（基于其所占所有服务的百分比）。"
+          "advice_1": "如果新服务模式设置为“发现”，风险评分将会增加，因为部署的新服务将不会被自动保护。",
+          "advice_2": "如果任何服务处在“发现”模式，风险评分将会有所增加（基于其所占所有服务的百分比）。"
         },
         "exposure": {
           "brief_1": "审查网络入口/出口相关的网络安全策略或操作。",
-          "advice_1": "如果您有允许外部连接的pod，风险评分将被其模式而影响。",
+          "advice_1": "如果有允许外部连接的pod，风险评分将被其模式而影响。",
           "advice_2": "发现模式大于监控或者保护的风险评分。",
           "advice_3": "如果对外暴露的pod上存在任何入口/出口策略违规，则会增加风险评分。",
           "advice_4": "如果在暴露的pod上检测到网络威胁，则会增加风险评分。"
         },
         "privilege": {
           "brief_1": "审查以特权容器运行的pod。",
-          "advice_1": "如果您有任何以特权运行的pod，风险分数将会增加。"
+          "advice_1": "如果有任何以特权运行的pod，风险分数将会增加。"
         },
         "runAsRoot": {
           "brief_1": "审查以root身份运行的pod。",
-          "advice_1": "如果您有任何以root身份运行的pod，风险分数将会增加。"
+          "advice_1": "如果有任何以root身份运行的pod，风险分数将会增加。"
         },
         "admission": {
           "brief_1": "审查准入控制的状态。",
-          "advice_1": "如果您未定义和启用任何“准入控制”的安全规则，则风险评分将会增加，因为未经授权或易受攻击的pod可能会被成功部署。"
+          "advice_1": "如果未定义和启用任何“准入控制”的安全规则，则风险评分将会增加，因为未经授权或易受攻击的pod可能会被成功部署。"
         },
         "vulnerability": {
           "brief_1": "在pods，主机和/或系统平台上发现了安全漏洞。",
@@ -557,9 +558,9 @@
         },
         "conclusion": {
           "CONGRATS": "恭喜!",
-          "CONGRATS_STATE": "您目前已成功将风险评分改进为“良好”。",
+          "CONGRATS_STATE": "目前已成功将风险评分改进为“良好”。",
           "WARNING": "警告",
-          "WARNING_STATE": "您的风险评分仍然很高，可能需要稍后继续改进相关的安全风险问题。"
+          "WARNING_STATE": "的风险评分仍然很高，可能需要稍后继续改进相关的安全风险问题。"
         },
         "noChangeRemind": {
           "CONGRATS_STATE": "评分没有改变，但仍然处于“良好”状态。",
@@ -567,7 +568,7 @@
         }
       },
       "serviceMode": {
-        "DESCRIPTION": "如果您自动学习或手动配置的安全策略规则已经相对稳定，请将“新服务模式”设置为“监视”或“保护”，并将运行服务的模式切换为“监视”或“保护”。"
+        "DESCRIPTION": "如果自动学习或手动配置的安全策略规则已经相对稳定，请将“新服务模式”设置为“监视”或“保护”，并将运行服务的模式切换为“监视”或“保护”。"
       },
       "exposure": {
         "DESCRIPTION_1": "请将运行服务的模式切换为“监视”或“保护”，以防止未经授权的网络连接，进程或文件系统活动。",
@@ -797,7 +798,7 @@
       "EVALUATION": "监视",
       "ENFORCE": "保护",
       "MODE": "模式",
-      "SWITCH_CONFIRM": "您要应用策略模式变更?",
+      "SWITCH_CONFIRM": "应用策略模式变更?",
       "SWITCH": "切换到",
       "MODE_SERVICE": "切换服务",
       "SERVICE_TO": "到",
@@ -1053,7 +1054,7 @@
     "ACCEPT": "接受",
     "ACCEPT_VUL": "接受漏洞",
     "msg": {
-      "REMOVE_CFM": "您确定要删除?",
+      "REMOVE_CFM": "确定要删除?",
       "REMOVE_OK": "漏洞配置资料条目删除成功!",
       "REMOVE_NG": "漏洞配置资料条目删除时发生错误!",
       "ADD_OK": "漏洞配置资料条目添加成功!",
@@ -1750,7 +1751,7 @@
       "MIN_DIGIT": "至少{{minDigit}}数字.",
       "MIN_SP_CHAR": "至少{{minSpChar}}特殊字符. 例如 !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~",
       "PASSWORD_SECURE": "请在确认密码栏再输入一次",
-      "ALL_SET": "您的密码设置完毕!"
+      "ALL_SET": "密码设置完毕!"
     }
   },
   "role": {
@@ -1986,22 +1987,22 @@
     },
     "profile": {
       "COUNT_POSTFIX": "个进程规则",
-      "REMOVE_OK": "您的进程规则已经被删除.",
+      "REMOVE_OK": "进程规则已经被删除.",
       "REMOVE_NG": "删除进程规则时发生错误!",
-      "ADD_OK": "您的进程规则已经被添加.",
+      "ADD_OK": "进程规则已经被添加.",
       "ADD_NG": "添加进程规则时发生错误!",
-      "EDIT_OK": "您的进程规则已经被修改.",
+      "EDIT_OK": "进程规则已经被修改.",
       "EDIT_NG": "编辑进程规则时发生错误!"
     },
     "file": {
       "COUNT_POSTFIX": "个文件访问规则",
       "RULE_SAMPLE": "例子: /dir/xxx, /dir/xxx.*, /dir/*.xxx, /dir/*/abc/* (不支持: [], () and regexp)",
-      "REMOVE_CONFIRM": "您要删除文件访问规则吗？- 过滤器:",
-      "REMOVE_OK": "您的文件访问规则已经被删除.",
+      "REMOVE_CONFIRM": "要删除文件访问规则吗？- 过滤器:",
+      "REMOVE_OK": "文件访问规则已经被删除.",
       "REMOVE_NG": "删除文件访问规则时发生错误!",
-      "ADD_OK": "您的文件访问规则已经被添加.",
+      "ADD_OK": "文件访问规则已经被添加.",
       "ADD_NG": "添加文件访问规则时发生错误!",
-      "EDIT_OK": "您的文件访问规则已经被修改.",
+      "EDIT_OK": "文件访问规则已经被修改.",
       "EDIT_NG": "编辑文件访问规则时发生错误!"
     },
     "dlp": {
@@ -2025,7 +2026,7 @@
         "SETTING_NG": "该组DLP设置时发生错误!",
         "EXPORT_OK": "该组的配置文件已成功导出!",
         "EXPORT_NG": "导出该组的配置文件时发生错误!",
-        "ADD_DLP_WARNING": "您是否需要在该组添加DLP检测器?"
+        "ADD_DLP_WARNING": "否需要在该组添加DLP检测器?"
       }
     },
     "waf": {
@@ -2047,7 +2048,7 @@
         "DISABLED_NG": "禁用改组的WAF设置时发生错误!",
         "SETTING_OK": "该组的WAF设置成功!",
         "SETTING_NG": "该组WAF设置时发生错误!",
-        "ADD_WAF_WARNING": "您是否需要在该组添加WAF检测器?"
+        "ADD_WAF_WARNING": "是否需要在该组添加WAF检测器?"
       }
     },
     "export": {
@@ -2294,8 +2295,8 @@
       "CANCEL": "取消"
     },
     "message": {
-      "FROM_GROUP_REQUIRED": "您必须选择一个组做为来源",
-      "TO_GROUP_REQUIRED": "您必须选择一个组作为目的",
+      "FROM_GROUP_REQUIRED": "必须选择一个组做为来源",
+      "TO_GROUP_REQUIRED": "必须选择一个组作为目的",
       "ADD_APP": "添加应用",
       "PORT_SAMPLE": "例如: 80, tcp/8080, udp/6142-6150, tcp/any, udp/any, icmp, any",
       "QUARANTINE_FAILED": "隔离失败",
@@ -2314,10 +2315,10 @@
         "SUBMIT_NG": "策略保存失败!"
       },
       "reminder": {
-        "MESSAGE": "您要离开本页面且不保存修改吗?"
+        "MESSAGE": "要离开本页面且不保存修改吗?"
       },
-      "REMOVE": "您要删除规则: ",
-      "UNREMOVE": "您要撤销删除规则: "
+      "REMOVE": "要删除规则: ",
+      "UNREMOVE": "要撤销删除规则: "
     },
     "TIP": {
       "ADD": "向下添加",
@@ -2925,17 +2926,17 @@
       "MS_AD": "微软活动目录"
     },
     "message": {
-      "IP_REQUIRED": "您必须指定IP.",
+      "IP_REQUIRED": "必须指定IP.",
       "IP_INVALID": "这看起来不是一个有效的IP.",
       "PORT_REQUIRED": "你必须提供一个端口.",
       "PORT_RANGE": "端口范围 1-65535",
-      "URL_REQUIRED": "您必须指定网址.",
+      "URL_REQUIRED": "必须指定网址.",
       "URL_INVALID": "这看起来不是一个有效的网址.",
       "GET_SYS_LOG_ERR": "获取系统设置时发生错误",
       "UPLOAD_FINISH": "文件上传成功. 请在数据导入的时候稍侯片刻. 系统将自动登出. 请在数据导入完成后再次登录."
     },
     "description": {
-      "PROFILE": "请更新您的个人资料.",
+      "PROFILE": "请更新个人资料.",
       "USERS": "添加，变更用户名和管理用户，权限及密码策略资料.",
       "CONFIGURATION": "启用系统日志，导入导出网络挂接和队列文件.",
       "LDAP": "配置一个LDAP/AD目录以启用用户授权.",

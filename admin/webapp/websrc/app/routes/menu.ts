@@ -119,7 +119,7 @@ const NOTIFICATIONS = {
       link: '/security-event',
     },
     {
-      text: '风险报告',
+      text: '审计',
       translate: 'sidebar.nav.AUDIT',
       link: '/audit',
     },

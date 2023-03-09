@@ -40,7 +40,7 @@ def usage(data):
             click.echo("")
         else:
             click.echo("Anonymous telemetry status")
-            column_map = (("current_version", "Current NeuVector Version"),
+            column_map = (("current_version", "Current Version"),
                           ("telemetry_url", "Telemetry Server URL"),
                           ("telemetry_freq", "Telemetry Data Post Frequency"))
 
@@ -198,7 +198,7 @@ def showLocalSystemConfig(data, scope):
     column_map += (("ibmsa_ep", "Integrate with IBM Security Advisor"),
                    ("ibmsa_ep_enabled", "       Enabled"),
                    ("ibmsa_ep_start", "       Setup done"),
-                   ("ibmsa_ep_dashboard_url", "       NeuVector Dashboard URL"),
+                   ("ibmsa_ep_dashboard_url", "       Dashboard URL"),
                    ("ibmsa_ep_connected_at", "       Connection creation time"),)
 
     column_map += (("syslog_addr", "Syslog Address"),
@@ -560,7 +560,7 @@ def set_system_partner(data):
 @set_system_partner.group("ibmsa", invoke_without_command=True)
 @click.option("--disable/--enable", default=None, required=False,
               help="Enable/disable IBM Security Advisor integration")
-@click.option("--dashboard", default=None, required=False, help="NeuVector dashboard URL")
+@click.option("--dashboard", default=None, required=False, help="dashboard URL")
 @click.pass_obj
 def set_system_ibmsa(data, disable, dashboard):
     """Set IBM Security Advisor integration settings"""

@@ -827,7 +827,7 @@ class AuthenticationService()(implicit executionContext: ExecutionContext)
             suseCookieValue.nonEmpty
           )
           AuthenticationManager.suseTokenMap += (authToken.token.token -> suseCookieValue)
-          logger.info("login with SUSE cookie")
+          logger.info("login with cookie")
           logger.info("Client ip {}", ip)
           Utils.respondWithNoCacheControl() {
             complete(authToken)
