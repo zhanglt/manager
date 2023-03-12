@@ -2897,7 +2897,7 @@
     "AS_STANDALONE": "作为独立集群导入配置",
     "RANCHER_EP": "Rancher端点",
     "autoscale": {
-      "TITLE": "扫描仪弹性伸缩",
+      "TITLE": "扫描器弹性伸缩",
       "MIN_MAX": "最小/最大 pods",
       "strategy": {
         "IMMEDIATE": "即时策略",

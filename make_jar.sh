@@ -2,7 +2,7 @@
 
 export CHROME_BIN=/usr/bin/google-chrome
 
-rm -rf admin/target
+rm -rf admin/target/scala-2.11/admin-assembly-1.0.jar
 pushd admin/webapp
 if [[ $# > 0 ]]; then
     case $1 in
@@ -15,7 +15,7 @@ if [[ $# > 0 ]]; then
         ;;
     esac
 fi
-npm install --legacy-peer-deps 2>&1
+#npm install --legacy-peer-deps 2>&1
 if [ $? -eq 0 ]; then
     echo npm package installation SUCCEED
 else

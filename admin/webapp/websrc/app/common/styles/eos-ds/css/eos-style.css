@@ -759,7 +759,8 @@ eos-alert ~ .content {
 /* Menu & desktop version styles
    ========================================================================== */
 .main-menu {
-  background-color: #f2f2f2;
+  
+  background-color: #1694ca;
   border-right: 0;
   display: flex;
   flex-direction: column;
