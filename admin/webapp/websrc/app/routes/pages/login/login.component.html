@@ -133,7 +133,7 @@
               <div class="mt-xl" *ngIf="!servers || servers.length === 0">
                 <!--suppress JSUnresolvedVariable -->
                 <button
-                  (click)="submitForm($event, loginForm.value, '')" [disabled]="!validEula || loginForm.invalid"
+                  (click)="submitForm($event, loginForm.value, '')" [disabled]="loginForm.invalid"
                   style="width: 100%" type="submit"
                 >
                   {{'login.LOGIN' | translate}}
