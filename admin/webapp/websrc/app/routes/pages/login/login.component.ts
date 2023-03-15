@@ -162,7 +162,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   localLogin(value?: any) {
-    if (this.validEula) {
+   // if (this.validEula) {
       this.authMsg = '';
       this.inProgress = true;
       this.authService
@@ -203,10 +203,11 @@ export class LoginComponent implements OnInit, OnDestroy {
             this.inProgress = false;
           }
         );
-    } else {
-      this.authMsg = this.translate.instant('license.message.ACCEPT_EULA_ERR');
-      this.inProgress = false;
-    }
+
+  //  } else {
+   //   this.authMsg = this.translate.instant('license.message.ACCEPT_EULA_ERR');
+   //   this.inProgress = false;
+   //}
   }
 
   submitForm($ev, value: any, mode) {
